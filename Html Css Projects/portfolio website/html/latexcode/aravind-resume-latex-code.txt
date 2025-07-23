@@ -1,0 +1,292 @@
+%-------------------------%-------------------------
+% Resume in Latex
+% Author : Audric Serador
+% Inspired by: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{fontawesome5}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{mwe} % for blindtext and example-image-a in example
+\usepackage{wrapfig}
+
+\input{glyphtounicode}
+
+% Custom font
+\usepackage[default]{lato}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------%
+% Custom commands
+\begin{document}
+\include{custom-commands}
+
+%-------------------------------------------%
+%%%%%%  RESUME STARTS HERE  %%%%%
+
+\begin{center}
+    \textbf{\Huge \scshape Aravind Manoharan} \\ \vspace{1pt}
+    \href{mailto:yuviaravind16@gmail.com}{{\underline{yuviaravind16@gmail.com}}} $|$
+    \small +91-8870387536 $|$
+    \href{www.linkedin.com/in/aravind-m-63813b170}{{\underline{linkedin.com/in/aravind-m-63813b170}}}
+
+\section{Professional Summary}
+\resumeSubHeadingListStart
+\resumeItemListStart
+\resumeItem{Dedicated Full Stack Developer with over 3.5 years of expertise in
+developing and maintaining web applications using modern
+technologies like Angular and Spring Boot.}
+\resumeItem{Proficient in agile
+methodologies and a collaborative team player with strong RCA and
+problem-solving skills.}
+\resumeItem{Capable of managing end-to-end project
+development and ensuring high-quality code through advanced
+techniques like TDD.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%-----------SKILLS-----------%
+\section{Technical Skills}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+	\small{\item{
+		\textbf{Frontend Languages}{: HTML5, CSS3, JavaScript, jQuery, TypeScript} \\
+		\textbf{Framework and Libraries}{: Angular, Bootstrap, Material UI} \\
+            \textbf{Backend Technology}{: Spring Boot, Node.js} \\
+		\textbf{Database}{: MongoDB, MySQL, PostgreSQL} \\
+            \textbf{Tools}{: Visual Studio Code, IntelliJ IDEA, Postman,  MongoDB Compass, pgAdmin4, Git, Bitbucket, Jira, Azure DevOps, SharePoint, Apache Directory Studio} \\
+            \textbf{Technologies}{: LDAP, RabbitMQ } \\
+            \textbf{Object Storage Service}{: Amazon S3 Bucket, Firebase} \\
+            \textbf{Containerization}{: Docker} \\
+            \textbf{Other Skills} {: Documentation}
+	}}
+    \end{itemize}
+
+
+%-----------EXPERIENCE-----------%
+\section{Work Experience}
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+    {ITAG Labs}{July 2021 -- Present}
+    {\textbf{Technical Associate - Developer}}{Coimbatore, Tamil Nadu}
+    \resumeItemListStart
+        \resumeItem{Developed and maintained responsive web applications and data
+visualization dashboards using Angular, delivering real-time
+insights.}
+        \resumeItem{Enhanced application efficiency and scalability by implementing
+RESTful and microservice architecture with Spring Boot.}
+        \resumeItem{Applied advanced techniques like lazy loading, code splitting and
+test-driven development (TDD) to ensure high code quality and
+minimize bugs.}
+        \resumeItem{Specialized in debugging and root cause analysis (RCA) for
+software applications.}
+        \resumeItem{Facilitated  Agile ceremonies such
+as sprint planning, sprint reviews and retrospectives for efficient
+project execution and team collaboration.}
+        \resumeItem{Designed and implemented new features in collaboration with
+cross-functional teams, aligning with project requirements.}
+        \resumeItem{Provided technical support for end-users and resolved escalated
+technical issues.}
+        \resumeItem{Developed scripts to automate routine tasks.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+    {ITAG Labs}{March 2021 -- June 2021}
+    {\textbf{Internship Trainee}}{Coimbatore, Tamil Nadu}
+    \resumeItemListStart
+        \resumeItem{Created responsive web pages using HTML5, CSS3 and JavaScript
+ensuring they were cross-browser compatible.}
+        \resumeItem{Developed RESTful APIs with Spring Boot and Node.js.}
+        \resumeItem{Designed and implemented MongoDB schemas and collections for
+efficient data storage and retrieval.}
+    \resumeItemListEnd
+    
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+      {Akrti Admin Module}{\textbf{Tech Stack} - Angular, Spring Boot, MongoDB}
+      {{Role}{: \textbf{Lead Developer}}}{}
+    
+    \resumeItemListStart
+    \resumeItem{Developed a comprehensive application for staff administration, role
+management and POS application access.}
+    \resumeItem{Features include
+automated price adjustment based on rate codes for services like
+tailoring, embroidery and alterations.}
+    \resumeItem{The application also supports
+customer alerts at various order stages with OTP-based
+authentication.}
+    \resumeItemListEnd
+
+ \resumeSubheading
+      {Akrti Order Management System (POS)}{\textbf{Tech Stack} - Angular, Spring Boot, MongoDB}
+      {{Role}{: \textbf{Lead Developer}}}{}
+    
+    \resumeItemListStart
+    \resumeItem{Developed a complete POS application for a tailoring shop that
+manages new customer registrations, service orders, and detailed
+tailoring forms.}
+    \resumeItem{The system provides acknowledgments for advance
+payments, generates invoices and updates order statuses
+throughout the tailoring process.}
+    \resumeItem{It also handles discounts, delivery
+fees and integrates with Slack for real-time notifications on new
+orders and payments.}
+    \resumeItemListEnd
+
+
+    \resumeSubheading
+      {Akrti Business Management Dashboard}{\textbf{Tech Stack} - Angular, Spring Boot, MongoDB}
+      {{Role}{: \textbf{Lead Developer}}}{}
+    
+    \resumeItemListStart
+    \resumeItem{Built a server-side application providing branch-specific statistics for
+tailoring shops, covering new orders and various services like
+tailoring, embroidery and alterations.}
+    \resumeItem{The dashboard generates
+comprehensive reports, including new client registrations, weekly
+orders and sales figures on a daily, weekly and monthly basis.}
+    \resumeItem{It also
+tracks individual employee performance and calculates daily, weekly
+and monthly financial balances.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Docsrev Health Manager}{\textbf{Tech Stack} - Angular, Node.js, MongoDB}
+      {{Role}{: \textbf{Developer}}}{}
+    
+    \resumeItemListStart
+        \resumeItem{Developed a web-based application for continuous health monitoring
+of configured instances across different environments.}
+        \resumeItem{ The
+application runs ping tests, provides alerts for downtime and offers
+task management features like schedules, queued tasks and kanban
+views.}\resumeItem{It also automates test suites at scheduled times.}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {Netsmart - Avatar Modernization Dashboard}{\textbf{Tech Stack} - Angular, Spring Boot, MongoDB}
+      {{Role}{: \textbf{Developer}}}{}
+    
+    \resumeItemListStart
+    \resumeItem{Developed an application that delivers multi-user load test reports
+and cache framework documentation with historical data, detailed by
+sprint.}
+    \resumeItem{It generates performance test reports using JMeter and
+JProfiler, retrieves Jira ticket statuses for summaries and includes a
+call tracking view and BDD perspective for each scenario.}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {Modpims - SBC Framework Management Dashboard}{\textbf{Tech Stack} - Angular, Spring Boot, MySQL}
+      {{Role}{: \textbf{Developer}}}{}
+    
+    \resumeItemListStart
+        \resumeItem{Developed a web-based application providing real-time information
+on Jira tickets in current sprints and VB6 to C# Stub implementations
+in Bitbucket.}
+        \resumeItem{The application includes a Framework Mappings module
+for detailed Library-Control-Prototype mappings and offers various
+reports such as Bitbucket Summary, Jira Summary, Framework Daily
+Development Tracker and Spiral Summary Report with historical
+data.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Staffing - Resume Management Portal}{\textbf{Tech Stack} - Angular, Spring Boot, PostgreSQL}
+      {{Role}{: \textbf{Developer}}}{}
+
+    \resumeItemListStart
+        \resumeItem{Created a web-based platform for accessing skill-selected resumes
+based on firms’ specified requirements.}
+        \resumeItem{The portal includes modules
+for employees, companies, shortlisted candidates and scheduling
+interviews.}
+        \resumeItem{It features a data visualization dashboard showing the
+hiring pipeline, activity logs, sought profiles, newly added profiles,
+skill-wise resume count charts and the total number of resumes.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------AWARDS-----------
+\section{Awards}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+    {ITAG Labs}{July 2023}
+    {\textbf{Interim Special Recognition Reward}}{}
+      \resumeItemListStart
+        \resumeItem{Received for exceptional performance and contribution to some key project accounts.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {K.S.Rangasamy College of Technology}{ Tiruchengode, Tamil Nadu}
+      {Electronics and Communication Engineering}{Aug 2017 -- Apr 2021}
+      \resumeItemListStart
+        \resumeItem{Cumulative GPA : \textbf{8.61/10.0}}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Metro Matriculation Higher Secondary School}{Mettupalayam, Tamil Nadu}
+      {HSC}{Jun 2015 -- Apr 2017}
+       \resumeItemListStart
+        \resumeItem{Percentage : \textbf{83.58}}
+      \resumeItemListEnd
+      \resumeSubheading
+      {Thambu Higher Secondary School}{Coimbatore, Tamil Nadu}
+      {SSLC}{Jun 2014 -- Apr 2015}
+       \resumeItemListStart
+        \resumeItem{Percentage : \textbf{93.6}}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------%
+\end{document}
