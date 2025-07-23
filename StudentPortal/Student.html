@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../../Bootstrap/bootstrap-5.3.5-dist/bootstrap-5.3.5-dist/css/bootstrap.css">
+</head>
+<style>
+    .bg-info
+    {
+        background: linear-gradient(darkslategrey,cyan);
+    }
+</style>
+<body>
+    <div class="container-fluid bg-info">
+        <div class="row">
+            <div class="col">
+                <h2>Student Portal</h2>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ducimus repellat voluptate numquam earum eius dolor, veniam beatae. Sint omnis modi, eum adipisci consequatur ipsam iste quo nostrum sed deserunt!
+                    Mollitia minima earum rem repellat ratione velit, repudiandae tenetur. Vero et reprehenderit nihil iusto distinctio quod dolorem laboriosam cumque nam doloremque consectetur architecto ipsam numquam atque, exercitationem doloribus hic quia?
+                    Itaque tempora quia deleniti illum saepe provident blanditiis officiis iusto voluptates, quibusdam incidunt. Aspernatur tempora quia incidunt error deleniti odit animi ab magnam delectus, sint alias. Voluptatum quos iusto corrupti!
+                    Quasi totam ad minus nam numquam sit deserunt suscipit, reprehenderit quis earum. Amet repellat, reprehenderit cupiditate, a cum esse, ipsum fuga sapiente soluta quasi tempora! Earum consectetur eaque sint nisi?
+                    Numquam incidunt voluptas cumque facere. Cum voluptates consequuntur ipsum illo architecto ex alias accusantium voluptatum temporibus, veniam neque, enim fugit quibusdam voluptatibus dignissimos sint cumque unde libero. Ipsa, quia voluptatem?
+                </p>
+                <button class="btn bg-info">Create</button>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4 m-auto">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <select class="form-select" id="select-val">
+                                <option value="All">All</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Pass">Pass</option>
+                                <option value="Fail">Fail</option>
+                            </select>
+                            <button class="btn bg-info mt-3" type="submit" id="submit-btn"
+                            >Submit</button>
+                        </div>
+                    </div>
+                    <table class="table mt-5">
+                        <thead>
+                            <tr>
+                                <th>Sid</th>
+                                <th>Sname</th>
+                                <th>Marks</th>
+                                <th>Gender</th>
+                            </tr>
+                        </thead>
+                        <tbody id="student-list">
+                            
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./Student.js"></script>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../../Bootstrap/bootstrap-5.3.5-dist/bootstrap-5.3.5-dist/css/bootstrap.css">
+</head>
+<body>
+    <div class="container-fluid bg-info">
+        <div class="row">
+            <div class="col">
+                <h2>Password Hider</h2>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4 m-auto">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Password</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                            <input class="form-check-input mt-0" type="checkbox" id="check-box" value="" aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="password" id="pw-box" class="form-control" aria-label="Text input with checkbox">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+let pwbox=document.getElementById('pw-box');
+let checkbox=document.getElementById('check-box');
+checkbox.addEventListener('change',function()
+{
+    if(pwbox.getAttribute('type')=='password')
+{
+    pwbox.setAttribute('type','text');
+}
+    else pwbox.setAttribute('type','password');
+})
+</script>
+</html>

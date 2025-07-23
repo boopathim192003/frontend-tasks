@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../../Bootstrap/bootstrap-5.3.5-dist/bootstrap-5.3.5-dist/css/bootstrap.css">
+    <style>
+        .bg-info,.active
+        {
+            background: linear-gradient(darkslategrey,cyan);
+        }
+        .hidden
+        {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid bg-info">
+        <div class="row">
+            <div class="col">
+                <h2>Step Assignment</h2>
+            </div>
+            <div class="col-auto">
+                <button class="btn btn-info col-auto mt-1" id="show-btn">Show</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-3 m-auto">
+                <div class="card hidden" id="display-card">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col-3 m-auto">
+                                <button id="one" class="btn">1</button>
+                            </div>
+                            <div class="col-3 m-auto">
+                                <button id="two" class="btn">2</button>
+                            </div>
+                            <div class="col-3 m-auto">
+                                <button id="three" class="btn">3</button>
+                            </div>
+                            <div class="col-3 m-auto">
+                                <button id="close-btn" class="btn">x</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body text-center">
+                        <h4 id="body-content"></h4>
+                    </div>
+                    <div class="card-footer">
+                        <div class="row text-center">
+                            <div class="col-6">
+                                <button class="btn bg-info" id="prev-btn">&#8592;Prev</button>
+                            </div>
+                            <div class="col-6">
+                                <button class="btn bg-info" id="next-btn">&#8594;Next
+
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>

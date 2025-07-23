@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../../Bootstrap/bootstrap-5.3.5-dist/bootstrap-5.3.5-dist/css/bootstrap.css">
+    <style>
+        .bg-info
+        {
+            background: linear-gradient(darkslategrey,cyan);
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid bg-info text-center">
+        <div class="row">
+            <div class="col">
+                <h2 class="p-1">JSpiders</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-4 m-auto">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h2>Registration Form</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label class="form-label">Select Course</label>
+                        <select class="form-select" onclick="coursefee()" id="selected-course">
+                            <option value="35000">Java</option>
+                            <option value="40000">MERN</option>
+                            <option value="32000">Python</option>
+                            <option value="30000">C++</option>
+                        </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Course Fees</label>
+                            <input type="text" id="course-fees" class="form-control" readonly>
+                        </div>
+
+                        <div class="mb-3 ">
+                            <label class="form-label">Passed Out Year:</label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" onclick="concessionFees()" type="radio" name="inlineRadioOptions" value="3000"></input>
+                                <label class="form-check-label">2025</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" onclick="concessionFees()" type="radio" name="inlineRadioOptions" value="2000"></input>
+                                <label class="form-check-label">2024</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" onclick="concessionFees()" type="radio" name="inlineRadioOptions" value="1000"></input>
+                                <label class="form-check-label">2023</label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Concession Fees</label>
+                            <input type="number" class="form-control readonly" id="finalConcFee">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Paid Fees</label>
+                            <input type="number" class="form-control" id="TotalPaidFees" oninput="calcFees()">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Due Fees</label>
+                            <input type="number" class="form-control" id="coursefees">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
